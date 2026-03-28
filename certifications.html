@@ -627,27 +627,16 @@
 
     <script>
 $('.certificate-carousel').slick({
-  centerMode: true,
-  centerPadding: '0px',
-  slidesToShow: 3,
+  slidesToShow: 1,   // ✅ ONLY ONE
+  slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 4000,
-  speed: 800,
+  autoplaySpeed: 3000,
+  speed: 700,
   arrows: false,
-  dots: false,
-  pauseOnHover: true,
-  pauseOnFocus: true,
-
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false
-      }
-    }
-  ]
+  dots: false,        // optional (nice UX)
+  centerMode: false, // ❌ MUST BE FALSE
+  adaptiveHeight: true
 });
 
 /* MODAL */
