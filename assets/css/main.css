@@ -12830,7 +12830,7 @@ p.sticky-label {
 .custom-metrics-section-2 .single-circle-bar h6 {
     color: #222222;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 /* FULL SECTION BACKGROUND FIX */
@@ -14895,34 +14895,41 @@ height: 90px;
 
 /* .......................................................................................................... */
 /* agriculture platforms page starts */
-
 .custom-split-section {
 padding: 100px 0;
 position: relative;
 overflow: hidden;
 }
-/* 🔥 BACKGROUND IMAGE + OVERLAY */
+/* default background */
 .custom-split-section::before {
 content: "";
 position: absolute;
 inset: 0;
 background: url('../img/bg-pattern.png') no-repeat center/cover;
-opacity: 0.15; /* subtle bg */
+opacity: 0.15;
 z-index: 0;
 }
 .custom-split-section::after {
 content: "";
 position: absolute;
 inset: 0;
-background: rgba(10, 25, 60, 0.25); /* 🔥 dark overlay */
+background: rgba(10, 25, 60, 0.25);
 z-index: 1;
 }
-/* REMOVE BG FOR WHITE SECTIONS */
+/* agriculture bg only for reveal */
+.custom-split-section.reveal::before {
+background: url('../img/agriculture/bg.avif') no-repeat center/cover;
+opacity: 1;
+}
+.custom-split-section.reveal::after {
+background: rgba(10, 25, 60, 0.4);
+}
+/* remove bg */
 .custom-split-section.no-bg::before,
 .custom-split-section.no-bg::after {
 display: none;
 }
-/* CONTAINER */
+/*container */
 .split-wrapper {
 display: flex;
 align-items: center;
@@ -14931,26 +14938,28 @@ gap: 80px;
 position: relative;
 z-index: 2;
 }
-/* REVERSE */
 .split-wrapper.reverse {
 flex-direction: row-reverse;
 }
-/* TEXT */
+/* text */
 .split-text {
 flex: 1;
+text-align: justify;
 }
 .split-text h2 {
 font-size: 34px;
 font-weight: 600;
 margin-bottom: 15px;
 color: #fff;
+text-align: left;
 }
 .split-text p {
 font-size: 16px;
 line-height: 1.7;
 color: #e5e7eb;
+text-align: justify;
 }
-/* IMAGE */
+/* image */
 .split-image {
 flex: 1;
 text-align: center;
@@ -14962,7 +14971,6 @@ border-radius: 20px;
 box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 transition: transform 0.4s ease;
 }
-/* HOVER EFFECT */
 .split-image img:hover {
 transform: scale(1.05);
 }
@@ -14983,11 +14991,16 @@ flex-direction: column !important;
 gap: 40px;
 text-align: center;
 }
+.split-text {
+text-align: justify;
+}
 .split-text h2 {
 font-size: 28px;
+text-align: center;
 }
 .split-text p {
 font-size: 15px;
+text-align: justify;
 }
 .split-image img {
 max-width: 380px;
@@ -14998,16 +15011,444 @@ max-width: 380px;
 .custom-split-section {
 padding: 60px 20px;
 }
+.split-text {
+text-align: justify;
+}
 .split-text h2 {
 font-size: 24px;
+text-align: center;
 }
 .split-text p {
 font-size: 14px;
+text-align: justify;
 }
 .split-image img {
 max-width: 100%;
 border-radius: 15px;
 }
 }
+.custom-split-section.no-bg .split-text h2 {
+color: #111;
+}
+.custom-split-section.no-bg .split-text p {
+color: #555;
+}
+@media (max-width: 576px) {
+.supply-mobile-fix .row {
+display: flex;
+flex-direction: column;
+}
+.supply-mobile-fix .row > div:first-child {
+order: 2;
+}
+.supply-mobile-fix .row > div:last-child {
+order: 1;
+}
+}
 /* agriculture platforms page ends */
 /* ............................................................................................................ */
+
+
+
+
+
+/* ........................................................................................ */
+/* about us page changes starts  */
+/* about quantbit technologies section heading font size and responsive */
+.about-hero-custom .section-title h2 {
+    font-size: 36px !important;   /* reduce size */
+    line-height: 1.3;
+    white-space: normal !important;  /* REMOVE nowrap issue */
+    max-width: 600px;
+}
+/* better spacing */
+.about-hero-custom .section-title {
+    margin-bottom: 15px;
+}
+/* paragraph alignment */
+.about-hero-custom p {
+    max-width: 550px;
+}
+/* ================= MOBILE FIX ================= */
+@media (max-width: 991px) {
+    .about-hero-custom .section-title h2 {
+        font-size: 28px !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about-hero-custom p {
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 575px) {
+    .about-hero-custom .section-title h2 {
+        font-size: 22px !important;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+}
+/* mobile cenetered */
+@media (max-width: 991px) {
+    .about-hero-custom .section-title span {
+        display: block;
+        text-align: center;
+        margin: 0 auto 8px;
+    }
+    .about-hero-custom p {
+        text-align: center;
+    }
+    .about-hero-custom .about-button {
+        text-align: center;
+    }
+    .about-hero-custom .about-button .theme-btn {
+        display: inline-block;
+        margin: 15px auto 0;
+    }
+    .about-hero-custom .about-author {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+/* vision section */
+/* ---------- HEADING FIX ---------- */
+.vision-custom .section-title h2 {
+    white-space: normal !important;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+/* Tablet - slightly bigger */
+@media (max-width: 991px) {
+    .vision-custom .section-title h2 {
+        font-size: 32px !important;
+        text-align: center;
+    }
+}
+/* Mobile - fix overflow + center */
+@media (max-width: 575px) {
+    .vision-custom .section-title h2 {
+        font-size: 24px !important;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+}
+/* ---------- PARAGRAPH CENTER ---------- */
+.vision-custom .service-content p {
+    max-width: 650px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+/* ---------- CARD GRID FIX ---------- */
+/* make row flex */
+.vision-custom .row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* column fix */
+.vision-custom .row.g-4 > div {
+    display: flex;
+}
+/* CARD SAME HEIGHT */
+.vision-custom .service-box-items-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 12px;
+}
+/* content stretch */
+.vision-custom .service-box-items-2 .content {
+    flex-grow: 1;
+}
+/* text center */
+.vision-custom .service-box-items-2 .content h3,
+.vision-custom .service-box-items-2 .content p {
+    text-align: center;
+}
+/* icon center */
+.vision-custom .service-box-items-2 .icon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* ---------- EQUAL HEIGHT STRONG FIX ---------- */
+/* ensures equal height even with different text */
+.vision-custom .col-lg-3 {
+    display: flex;
+}
+.vision-custom .col-lg-3 .service-box-items-2 {
+    flex: 1;
+}
+/* ---------- TABLET GRID IMPROVEMENT ---------- */
+@media (max-width: 991px) {
+    .vision-custom .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .vision-custom .service-box-items-2 {
+        min-height: 220px;
+    }
+}
+/* ---------- MOBILE ---------- */
+@media (max-width: 575px) {
+    .vision-custom .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .vision-custom .service-box-items-2 {
+        min-height: auto;
+    }
+}
+.vision-custom span {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+}
+/* justify text */
+.vision-custom .service-content p {
+    text-align: justify;
+    text-align-last: center; /* last line center */
+}
+.vision-custom .service-box-items-2 .content p {
+    text-align: justify;
+    text-align-last: center;
+}
+.vision-custom .section-title,
+.vision-custom .section-title h2,
+.vision-custom .section-title span {
+    text-align: center;
+}
+.vision-custom .service-box-items-2 .content h3 {
+    text-align: center;
+}
+.vision-custom span {
+    text-align: center;
+}
+/* technology section */
+/* FIX HEADING OVERFLOW */
+.tech-approach-custom .section-title h2 {
+    white-space: normal !important;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+/* tablet */
+@media (max-width: 991px) {
+    .tech-approach-custom .section-title h2 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+}
+/* mobile */
+@media (max-width: 575px) {
+    .tech-approach-custom .section-title h2 {
+        font-size: 24px !important;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+}
+/* scalability section */
+/* ================= TABLET ================= */
+@media (max-width: 991px) {
+    /* override template flex ONLY here */
+    .scalability-custom .counter-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px;
+    }
+    /* fix left text */
+    .scalability-custom .metrics-center-text {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* fix counter box */
+    .scalability-custom .counter-wrapper-2 {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 40px;
+        width: 100%;
+    }
+}
+/* ================= MOBILE ================= */
+@media (max-width: 575px) {
+    /* reduce gap between two counters */
+    .scalability-custom .counter-wrapper-2 {
+        gap: 6px !important;   /* 🔥 tighter spacing */
+    }
+    /* reduce inner box padding */
+    .scalability-custom .full-width-counter-box {
+        padding: 10px !important;
+        max-width: 260px;   /* slightly tighter width */
+    }
+    /* reduce each counter spacing */
+    .scalability-custom .counter-items {
+        padding: 4px 2px;
+    }
+    /* reduce icon spacing */
+    .scalability-custom .counter-items .icon {
+        margin-bottom: 2px;
+    }
+    /* reduce text spacing */
+    .scalability-custom .counter-items p {
+        margin-top: 1px;
+        line-height: 1.2;
+    }
+    /* reduce number size slightly */
+    .scalability-custom .counter-items h2 {
+        font-size: 22px !important;
+    }
+    @media (max-width: 575px) {
+    .scalability-custom .counter-items:last-child {
+        transform: translateX(-40px);  /* move slightly left */
+    }
+}
+}
+.scalability-custom .metrics-center-text p {
+    text-align: justify;
+}
+/* mobile + tablet consistency */
+@media (max-width: 991px) {
+    .scalability-custom .metrics-center-text p {
+        text-align: justify;
+    }
+}
+/* areas of impact section */
+@media (min-width: 992px) {
+    /* reduce image size */
+    .custom-impact-section .service-image {
+        width: 100%;
+        height: 240px;   /* 🔥 reduced height */
+        overflow: hidden;
+    }
+    .custom-impact-section .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* keep cards aligned in one row */
+    .custom-impact-section .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;   /* adjusted spacing */
+    }
+    /* equal width cards */
+    .custom-impact-section .col-lg-4 {
+        flex: 0 0 32%;   /* ensures 3 in one row */
+        max-width: 32%;
+    }
+}
+/* text align */
+@media (min-width: 992px) {
+    /* make all cards equal height */
+    .custom-impact-section .service-box-items {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    /* image fixed height */
+    .custom-impact-section .service-image {
+        height: 240px;
+        overflow: hidden;
+    }
+    /* content area fills remaining */
+    .custom-impact-section .service-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    /* FIX TITLE HEIGHT (important) */
+    .custom-impact-section .service-content h3 {
+        min-height: 60px;   /* 🔥 aligns all headings */
+    }
+    /* FIX LIST ALIGNMENT */
+    .custom-impact-section .service-content ul {
+        margin-top: 10px;
+    }
+}
+/* heading */
+@media (min-width: 992px) {
+
+    .custom-impact-section .p-4 h4 {
+        font-size: 23px;   /* reduce slightly */
+        white-space: nowrap;
+    }
+
+}
+/* heading */
+@media (max-width: 575px) {
+    .custom-impact-section .p-4 h4 {
+        font-size: 18px;          /* slightly smaller */
+        white-space: nowrap;      /* force one line */
+        overflow: hidden;
+        text-overflow: ellipsis;  /* safe fallback */
+    }
+
+}
+/* area of impact mobile */
+@media (max-width: 991px) {
+
+    .custom-impact-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+/* who we serve section */
+.who-serve-custom .section-title h2 {
+    white-space: normal !important;
+    text-align: center;
+}
+@media (max-width: 575px) {
+    .who-serve-custom .section-title h2 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+}
+/* our commitments section */
+@media (min-width: 576px) and (max-width: 991px) {
+    /* section title */
+    .cta-banner-section .section-title h2 {
+        font-size: 34px !important;
+        line-height: 1.3;
+    }
+    /* headings inside cards (Responsible, Scalable) */
+    .cta-banner-section .content h3 {
+        font-size: 22px !important;
+    }
+    /* paragraph text */
+    .cta-banner-section .content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+/* ready section */
+/* mobile */
+@media (max-width: 575px) {
+    .mobile-fix-text h2 {
+        font-size: 22px !important;
+        line-height: 1.3;
+        white-space: normal !important;   /* IMPORTANT: remove no-wrap issue */
+        text-align: center;
+    }
+    .mobile-fix-text h5 {
+        font-size: 14px !important;
+        line-height: 1.5;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .mobile-fix-text span {
+        font-size: 12px !important;
+        display: block;
+        margin-bottom: 6px;
+    }
+}
