@@ -1,0 +1,107 @@
+/* Our Vision.. */
+
+/* ===============================
+   CUSTOM CENTER LAYOUT (FINAL)
+================================= */
+
+/* Center top content */
+.custom-center-layout .service-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Row alignment */
+.custom-center-layout .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 4 cards in one row */
+.custom-center-layout .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/* ===============================
+   CARD DESIGN (MORE COMPACT 🔥)
+================================= */
+/* ===============================
+   ULTRA COMPACT CARDS 🔥
+================================= */
+
+.custom-center-layout .service-box-items-2 {
+    padding: 8px !important;   /* ↓ very tight */
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Icon */
+.custom-center-layout .service-box-items-2 .icon {
+    margin-bottom: 4px;
+}
+
+.custom-center-layout .service-box-items-2 .icon i {
+    font-size: 20px;  /* ↓ smaller */
+}
+
+/* Title */
+.custom-center-layout .service-box-items-2 .content h3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+/* Description */
+.custom-center-layout .service-box-items-2 .content p {
+    font-size: 11px;
+    line-height: 1.15;
+    margin-bottom: 0;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 991px) {
+    .custom-center-layout .service-box-items-2 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-center-layout .service-box-items-2 {
+        padding: 8px;
+    }
+
+    .custom-center-layout .service-box-items-2 .content h3 {
+        font-size: 13px;
+    }
+
+    .custom-center-layout .service-box-items-2 .content p {
+        font-size: 10px;
+    }
+}
+
+/* 🚨 FORCE REMOVE OVERLAP COMPLETELY */
+section.feature-icon-box-area {
+    margin-top: 0 !important;
+    transform: none !important;
+    position: relative !important;
+    top: 0 !important;
+}
+
+/* REMOVE ANY HIDDEN OFFSET */
+.feature-icon-box-wrapper {
+    margin-top: 0 !important;
+}
+
+/* ENSURE CTA STAYS ABOVE */
+.cta-banner-section {
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* ENSURE NEXT SECTION STAYS BELOW */
+.feature-icon-box-area {
+    z-index: 1 !important;
+}
