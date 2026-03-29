@@ -15644,3 +15644,248 @@ order: 1;
         margin-bottom: 6px;
     }
 }
+/* about us page section ends */
+/* ................................................................................ */
+
+
+
+
+
+/* ................................................................................ */
+/* agri crm page starts */
+
+.crm-features-section {
+    padding: 100px 20px;
+}
+
+/* ROW */
+.crm-feature-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.crm-feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.crm-img {
+    flex: 1;
+}
+
+.crm-img img {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+}
+
+/* CONTENT */
+.crm-content {
+    flex: 1;
+}
+
+.crm-content h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.crm-content p {
+    font-size: 15.5px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* POINTS */
+.crm-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 0;
+    margin: 0 0 20px;
+    list-style: none;
+}
+
+.crm-points li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 14.5px;
+}
+
+/* TICK */
+.crm-points li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4f46e5; /* theme accent */
+    font-size: 13px;
+}
+
+/* RESULT BOX */
+.crm-result {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    background: #f3f4f6;
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .crm-feature-row {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+    .crm-feature-row.reverse {
+        flex-direction: column;
+    }
+
+    .crm-points {
+        grid-template-columns: 1fr;
+    }
+}
+/* agri crm page ends */
+/* ................................................................................. */
+
+
+
+
+
+/* ................................................................................. */
+/* hrms new page starts */
+
+.hrms-section {
+    padding: 100px 20px;
+}
+
+/* ROW */
+.hrms-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 100px;
+    align-items: flex-start;
+}
+
+.hrms-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* LEFT */
+.hrms-left {
+    flex: 1;
+}
+
+.hrms-left h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hrms-left p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* IMAGE */
+.hrms-image {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.hrms-image img {
+    width: 100%;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.hrms-image img:hover {
+    transform: scale(1.04);
+}
+
+/* RIGHT */
+.hrms-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.hrms-card {
+    background: #f9fafb;
+    padding: 22px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+.hrms-card:hover {
+    transform: translateY(-6px);
+}
+
+/* TITLE */
+.hrms-card h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* LIST */
+.hrms-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hrms-card li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 14.5px;
+}
+
+/* TICK */
+.hrms-card li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hrms-row {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+    .hrms-row.reverse {
+        flex-direction: column;
+    }
+
+    .hrms-left h2 {
+        font-size: 24px;
+    }
+
+    .hrms-left p {
+        text-align: justify;
+    }
+
+    .hrms-image {
+        margin-top: 10px;
+    }
+}
+
+
+/* hrms new page ends */
+/* .................................................................................. */
