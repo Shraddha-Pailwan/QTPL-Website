@@ -381,7 +381,7 @@
         style="background-image: url('assets/img/breadcrumb.jpg');">
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">CRM</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">HRMS</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="index-2.html">
@@ -392,263 +392,455 @@
                         <i class="fal fa-minus"></i>
                     </li>
                     <li>
-                        CRM
+                        HRMS
                     </li>
                 </ul>
             </div>
         </div>
+
     </div>
 
     <!-- main starts -->
 
-    <section class="crm-features-section">
+    <section class="erp-new">
 
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row">
-        <div class="crm-img">
-            <img src="img/lead-management.jpg" alt="">
+        <div class="erp-new-wrapper">
+
+            <!-- LEFT MENU -->
+            <div class="erp-new-sidebar">
+                <h3>Modules</h3>
+
+                <div class="erp-new-item active" onclick="openTab(event,'farmer')">Farmer Registration</div>
+                <div class="erp-new-item" onclick="openTab(event,'plot')">Plot Registration</div>
+                <div class="erp-new-item" onclick="openTab(event,'agri')">Agriculture Development</div>
+                <div class="erp-new-item" onclick="openTab(event,'sampling')">Cane Sampling</div>
+                <div class="erp-new-item" onclick="openTab(event,'ht')">H&T Management</div>
+                <div class="erp-new-item" onclick="openTab(event,'trip')">Trip Sheet</div>
+                <div class="erp-new-item" onclick="openTab(event,'token')">Cane Yard Token</div>
+                <div class="erp-new-item" onclick="openTab(event,'weight')">Weighbridge</div>
+                <div class="erp-new-item" onclick="openTab(event,'billing')">Billing & Payment</div>
+                <div class="erp-new-item" onclick="openTab(event,'diesel')">Diesel Management</div>
+                <div class="erp-new-item" onclick="openTab(event,'purchase')">Purchase</div>
+                <div class="erp-new-item" onclick="openTab(event,'inventory')">Inventory</div>
+                <div class="erp-new-item" onclick="openTab(event,'sales')">Sales & Dispatch</div>
+                <div class="erp-new-item" onclick="openTab(event,'accounting')">Accounting</div>
+                <div class="erp-new-item" onclick="openTab(event,'finance')">Finance</div>
+                <div class="erp-new-item" onclick="openTab(event,'gst')">GST & Tax</div>
+                <div class="erp-new-item" onclick="openTab(event,'budget')">Budget</div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="erp-new-content">
+                <button class="erp-back-btn" onclick="goBack()">← Back</button>
+                <!-- farmer -->
+                <div class="erp-tab active" id="farmer">
+
+                    <h2 class="erp-title">Farmer Registration</h2>
+
+                    <!-- TWO IMAGES -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/farm.png" alt="Farmer Image 1">
+                        <!-- <img src="assets/img/agriculture/farm.png" alt="Farmer Image 2"> -->
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital KYC capture for sugarcane farmers</p>
+                        <p>Aadhaar, PAN, and bank verification</p>
+                        <p>Unique farmer registration ID</p>
+                        <p>Centralized farmer database</p>
+                        <p>Real-time identity validation</p>
+                        <p>Secure document storage</p>
+                        <p>Easy onboarding workflow</p>
+                        <p>Transparent payment linkage</p>
+                    </div>
+
+                </div>
+
+                <!-- PLOT -->
+                <div class="erp-tab" id="plot">
+
+                    <h2 class="erp-title">Plot Registration</h2>
+
+                    <!-- FULL WIDTH IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/weather.png" alt="Plot Registration">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital plot mapping</p>
+                        <p>GPS-enabled geo-tagging</p>
+                        <p>Soil & irrigation tracking</p>
+                        <p>Yield prediction integration</p>
+                        <p>Unique plot ID linkage</p>
+                        <p>Real-time acreage tracking</p>
+                        <p>Ownership transparency</p>
+                        <p>Productivity analytics</p>
+                    </div>
+
+                </div>
+
+                <!-- AGRICULTURE -->
+                <div class="erp-tab" id="agri">
+
+                    <h2 class="erp-title ">Agriculture Development</h2>
+
+                    <!-- SINGLE CENTER IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/supply-chain.png" alt="Agriculture Development">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>One-click input requests</p>
+                        <p>Automatic fertilizer calculation</p>
+                        <p>Smart allocation</p>
+                        <p>Digital tracking</p>
+                        <p>Approval workflow</p>
+                        <p>Auto deduction in billing</p>
+                        <p>Village-wise tracking</p>
+                        <p>Complete history</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="sampling">
+
+                    <h2 class="erp-title ">Cane Sampling</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/sampling.png" alt="Cane Sampling">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital selection of plots for cane sampling based on crop age and season</p>
+                        <p>Standard sampling templates to ensure uniform testing across villages</p>
+                        <p>Mobile-based sampling data capture directly from the field</p>
+                        <p>Automatic calculation of sampling results without manual formulas</p>
+                        <p>Instant marking of plots as “Ready” or “Not Ready” for harvesting</p>
+                        <p>Sampling results directly linked to harvesting planning</p>
+                        <p>Prevents harvesting without completed sampling using rule-based control</p>
+                        <p>Easy access to past sampling history for farmers and officers</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="ht">
+
+                    <h2 class="erp-title ">H&T Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/ht.png" alt="H&T Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Centralized harvester and transporter master management for the entire crushing season</p>
+                        <p>Digital contract management for harvesters and transporters with season-wise control</p>
+                        <p>Automatic assignment of harvesters and transporters during harvesting and trip planning</p>
+                        <p>Advance and material issue tracking linked directly to H&T contracts</p>
+                        <p>Rule-based advance limits to prevent over-payment or misuse</p>
+                        <p>Auto deduction of H&T advances and materials during billing and final settlement</p>
+                        <p>Live tracking of harvester and transporter performance including trips, tonnage, and activity
+                            status</p>
+                        <p>Complete H&T transaction history available in one place for audit and review</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="trip">
+
+                    <h2 class="erp-title ">Trip Sheet Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/trip.png" alt="Trip Sheet Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital trip sheet generation for sugarcane cutting and transport without paper slips</p>
+                        <p>Automatic linking of trip sheets with farmer, plot, harvester, and transporter</p>
+                        <p>One-click assignment of harvester and vehicle based on active H&T contracts</p>
+                        <p>Real-time trip status tracking from cutting to cane yard entry</p>
+                        <p>Prevents duplicate or unauthorized trip sheets through system validation</p>
+                        <p>Direct integration with token generation and weighbridge process</p>
+                        <p>Live visibility of completed, pending, and in-progress trips</p>
+                        <p>Complete trip history available for billing, audit, and dispute resolution</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="token">
+
+                    <h2 class="erp-title ">Cane Yard Token Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/token.png" alt="Cane Yard Token Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic token generation for vehicles entering the cane yard</p>
+                        <p>Digital queue management to control vehicle movement and avoid congestion</p>
+                        <p>Token creation only for valid trip sheets to block unauthorized vehicles</p>
+                        <p>Real-time token status tracking including waiting, in-process, and completed</p>
+                        <p>Direct linking of token with trip sheet, vehicle, and transporter</p>
+                        <p>Prevents duplicate token generation through system validation</p>
+                        <p>Smooth integration with weighbridge operations for faster processing</p>
+                        <p>Live view of cane yard load for better operational control</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="weight">
+
+                    <h2 class="erp-title ">Cane Weight & Weighbridge</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/weighbridge.png" alt="Weighbridge">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic capture of cane weight from weighbridge using manual or integrated systems</p>
+                        <p>Real-time validation of token and trip sheet before weighing</p>
+                        <p>System-calculated net cane weight using gross minus tare to eliminate manual errors</p>
+                        <p>Weight data directly linked to farmer, plot, harvester, and transporter</p>
+                        <p>Prevents duplicate or incorrect weight entries through rule-based checks</p>
+                        <p>Instant availability of weight data for billing and settlement</p>
+                        <p>Live monitoring of daily cane inward quantity</p>
+                        <p>Complete weight history available for audit and dispute resolution</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="billing">
+
+                    <h2 class="erp-title ">Cane Billing & Farmer Payment</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/billing.png" alt="Billing & Payment">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic cane bill generation using approved weight, rate, and trip data</p>
+                        <p>System-driven calculation of payable amount with zero manual billing errors</p>
+                        <p>Auto adjustment of advances, loans, and agriculture input deductions</p>
+                        <p>Farmer-wise consolidated billing across trips and billing periods</p>
+                        <p>Direct linkage of cane bills with farmer bank details for payment processing</p>
+                        <p>Automated payment settlement workflow with approval and release control</p>
+                        <p>Real-time payment status tracking including scheduled, released, and paid</p>
+                        <p>Complete billing and payment history available for transparency and audit</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="diesel">
+
+                    <h2 class="erp-title ">Diesel Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/diesel.png" alt="Diesel Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital diesel issue entry for harvesters, transporters, and vehicles</p>
+                        <p>Automatic diesel allocation rules based on vehicle type, route, or contract</p>
+                        <p>Real-time diesel stock update with every issue entry</p>
+                        <p>Prevents excess or unauthorized diesel issue through system-defined limits</p>
+                        <p>Shift-wise diesel closing with automatic opening and closing balance calculation</p>
+                        <p>Vehicle-wise and contract-wise diesel usage tracking</p>
+                        <p>Auto recovery of diesel cost during H&T billing or settlement</p>
+                        <p>Complete diesel usage history available for monitoring and audit</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="purchase">
+
+                    <h2 class="erp-title ">Purchase Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/purchase.png" alt="Purchase Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital purchase requisition creation from departments like agriculture, stores, and
+                            maintenance</p>
+                        <p>Automatic approval workflow based on department, value, and authority level</p>
+                        <p>One-click purchase order generation from approved requisitions</p>
+                        <p>Direct linkage of purchase orders with suppliers and rate agreements</p>
+                        <p>Goods receipt entry with automatic stock update on material arrival</p>
+                        <p>Supplier invoice matching with purchase order and receipt to prevent billing errors</p>
+                        <p>Real-time visibility of pending, approved, and completed purchases</p>
+                        <p>Complete purchase history and audit trail available for review and compliance</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="inventory">
+
+                    <h2 class="erp-title ">Inventory & Stores Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/inventory.png" alt="Inventory Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Real-time stock tracking for all materials across stores and warehouses</p>
+                        <p>Automatic stock updates on purchase receipt, issue, and return</p>
+                        <p>Material issue control linked to approved requests only</p>
+                        <p>Live visibility of available, reserved, and consumed stock</p>
+                        <p>Prevents negative stock and over-issue through system rules</p>
+                        <p>Item-wise and warehouse-wise stock history available instantly</p>
+                        <p>Easy tracking of slow-moving and critical items</p>
+                        <p>Complete audit trail of every stock movement</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="sales">
+
+                    <h2 class="erp-title ">Sales & Dispatch</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/sales.png" alt="Sales & Dispatch">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Digital sales order and dispatch creation without manual paperwork</p>
+                        <p>Automatic stock reduction at the time of dispatch</p>
+                        <p>Dispatch allowed only for available stock to prevent over-selling</p>
+                        <p>Vehicle-wise and order-wise dispatch tracking</p>
+                        <p>Real-time visibility of pending and completed dispatches</p>
+                        <p>Direct linkage of dispatch with sales invoice generation</p>
+                        <p>Accurate billing based on actual dispatched quantity</p>
+                        <p>Complete sales and dispatch history available for tracking and audit</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="accounting">
+
+                    <h2 class="erp-title ">Accounting</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/accounting.png" alt="Accounting">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic accounting entries generated from billing, purchase, sales, and payments</p>
+                        <p>Real-time ledger updates with every transaction without manual posting</p>
+                        <p>System-driven control of debit and credit entries to avoid accounting errors</p>
+                        <p>Centralized tracking of bank and cash transactions</p>
+                        <p>Live visibility of receivables and payables</p>
+                        <p>Auto-generated financial statements including Profit & Loss and Balance Sheet</p>
+                        <p>Period locking and approval control to prevent back-dated changes</p>
+                        <p>Complete audit trail for every financial transaction</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="finance">
+
+                    <h2 class="erp-title ">Finance</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/finance.png" alt="Finance">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic financial entries generated from billing, purchases, sales, and payments</p>
+                        <p>Real-time update of ledgers without manual posting</p>
+                        <p>Centralized control of cash and bank transactions</p>
+                        <p>Live visibility of receivables and payables across farmers, vendors, and contractors</p>
+                        <p>System-driven approval workflow for payments and financial postings</p>
+                        <p>Auto-generated financial statements including Profit & Loss and Balance Sheet</p>
+                        <p>Period locking to prevent back-dated changes</p>
+                        <p>Complete financial audit trail for every transaction</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="gst">
+
+                    <h2 class="erp-title ">GST & Tax</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/gst.png" alt="GST & Tax">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Automatic GST calculation on sales, purchases, billing, and services</p>
+                        <p>System-driven posting to correct GST and tax ledgers</p>
+                        <p>Real-time tracking of GST payable and input tax credit</p>
+                        <p>Built-in validation to prevent GST and tax errors</p>
+                        <p>Auto-generated GST reports ready for filing and review</p>
+                        <p>Direct linkage of tax entries with invoices and bills</p>
+                        <p>Tax period locking after filing to avoid changes</p>
+                        <p>Complete tax audit trail for compliance and inspections</p>
+                    </div>
+
+                </div>
+
+                <div class="erp-tab" id="budget">
+
+                    <h2 class="erp-title ">Budget Management</h2>
+
+                    <!-- IMAGE -->
+                    <div class="erp-full-image">
+                        <img src="assets/img/agriculture/budget.png" alt="Budget Management">
+                    </div>
+
+                    <!-- POINTS -->
+                    <div class="erp-grid">
+                        <p>Department-wise and season-wise budget creation in a digital format</p>
+                        <p>Automatic budget validation during purchase, expense, and payment entries</p>
+                        <p>Real-time tracking of budget used versus available balance</p>
+                        <p>Prevents overspending by blocking transactions beyond approved limits</p>
+                        <p>Approval workflow for budget creation and revisions</p>
+                        <p>Live visibility of budget status for management and department heads</p>
+                        <p>Auto budget consumption updates with every financial transaction</p>
+                        <p>Complete budget history and variance tracking for review and audit</p>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="crm-content">
-            <h3>Lead Management & Automation CRM</h3>
-            <p>
-                Capture, assign, and track leads efficiently with a smart system designed to maximize conversions and eliminate manual tracking.
-            </p>
 
-            <ul class="crm-points">
-                <li>Automatic lead capture from website, social media & campaigns</li>
-                <li>Intelligent lead assignment based on rules & territory</li>
-                <li>Centralized lead database with full history</li>
-                <li>Lead → Opportunity → Quotation → Sales flow</li>
-                <li>Real-time sales funnel visibility</li>
-                <li>Priority tagging (Hot, Warm, Cold)</li>
-                <li>Instant lead notifications</li>
-                <li>Zero lead leakage</li>
-            </ul>
+    </section>
 
-            <div class="crm-result">Higher conversions & faster response time</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row reverse">
-        <div class="crm-img">
-            <img src="img/followup.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Follow-Up & Reminder CRM</h3>
-            <p>
-                Stay ahead of every prospect with automated reminders and structured follow-up tracking.
-            </p>
-
-            <ul class="crm-points">
-                <li>Automated reminders for calls & meetings</li>
-                <li>Task-based follow-ups for sales teams</li>
-                <li>Web & mobile alerts</li>
-                <li>Complete follow-up history</li>
-                <li>Missed follow-up tracking</li>
-                <li>Daily task dashboard</li>
-            </ul>
-
-            <div class="crm-result">Improved discipline & higher deal closure</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row">
-        <div class="crm-img">
-            <img src="img/sales.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Sales Funnel & Opportunity Tracking</h3>
-            <p>
-                Get full visibility into your pipeline and make smarter sales decisions.
-            </p>
-
-            <ul class="crm-points">
-                <li>Visual sales funnel dashboard</li>
-                <li>Stage-wise opportunity tracking</li>
-                <li>Revenue forecasting</li>
-                <li>Salesperson & territory reports</li>
-                <li>Bottleneck identification</li>
-                <li>Win-loss analysis</li>
-            </ul>
-
-            <div class="crm-result">Better forecasting & improved performance</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row reverse">
-        <div class="crm-img">
-            <img src="img/quotation.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Quotation & Sales Order Management</h3>
-            <p>
-                Close deals faster with automated and professional sales documentation.
-            </p>
-
-            <ul class="crm-points">
-                <li>Create quotations instantly</li>
-                <li>Auto-fill customer & product details</li>
-                <li>Convert to sales orders in one click</li>
-                <li>Track quotation status</li>
-                <li>Complete sales lifecycle tracking</li>
-                <li>Reduced manual errors</li>
-            </ul>
-
-            <div class="crm-result">Faster approvals & smoother workflow</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row">
-        <div class="crm-img">
-            <img src="img/field.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Field Staff Tracking (Mobile CRM)</h3>
-            <p>
-                Empower your field teams with real-time tracking and seamless communication.
-            </p>
-
-            <ul class="crm-points">
-                <li>Live location tracking</li>
-                <li>Attendance (check-in/out)</li>
-                <li>Visit tracking with notes</li>
-                <li>Mobile CRM access</li>
-                <li>Improved transparency</li>
-                <li>Better route planning</li>
-            </ul>
-
-            <div class="crm-result">Higher productivity & accountability</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row reverse">
-        <div class="crm-img">
-            <img src="img/task.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Task, Event & Appointment Management</h3>
-            <p>
-                Stay organized with structured task and activity planning.
-            </p>
-
-            <ul class="crm-points">
-                <li>Task creation & assignment</li>
-                <li>Appointment scheduling</li>
-                <li>Event planning</li>
-                <li>Priority-based tasks</li>
-                <li>Team visibility</li>
-                <li>Automated reminders</li>
-            </ul>
-
-            <div class="crm-result">Better planning & smoother operations</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row">
-        <div class="crm-img">
-            <img src="img/dashboard.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>CRM Reports & Dashboards</h3>
-            <p>
-                Make smarter business decisions using real-time insights and analytics.
-            </p>
-
-            <ul class="crm-points">
-                <li>Live dashboards</li>
-                <li>Sales performance reports</li>
-                <li>Lead conversion analytics</li>
-                <li>Productivity tracking</li>
-                <li>Territory-wise analysis</li>
-                <li>Custom reports</li>
-            </ul>
-
-            <div class="crm-result">Data-driven growth & control</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row reverse">
-        <div class="crm-img">
-            <img src="img/campaign.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Email & SMS Campaign Management</h3>
-            <p>
-                Engage customers effectively with automated communication campaigns.
-            </p>
-
-            <ul class="crm-points">
-                <li>Email marketing campaigns</li>
-                <li>SMS promotions & alerts</li>
-                <li>Customer segmentation</li>
-                <li>Campaign performance tracking</li>
-                <li>Centralized communication history</li>
-            </ul>
-
-            <div class="crm-result">Higher engagement & better reach</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row">
-        <div class="crm-img">
-            <img src="img/integration.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Integrations & Unified Communication</h3>
-            <p>
-                Connect all your platforms and manage communication from one place.
-            </p>
-
-            <ul class="crm-points">
-                <li>WhatsApp, Facebook, Instagram integration</li>
-                <li>Indiamart & lead sources integration</li>
-                <li>Email, SMS, LinkedIn connectivity</li>
-                <li>Unified communication dashboard</li>
-                <li>Faster response handling</li>
-            </ul>
-
-            <div class="crm-result">Unified communication & faster responses</div>
-        </div>
-    </div>
-
-    <!-- FEATURE ITEM -->
-    <div class="crm-feature-row reverse">
-        <div class="crm-img">
-            <img src="img/customer.jpg" alt="">
-        </div>
-        <div class="crm-content">
-            <h3>Customer & Contact Management</h3>
-            <p>
-                Build long-term relationships with complete customer insights and history.
-            </p>
-
-            <ul class="crm-points">
-                <li>Centralized customer database</li>
-                <li>Interaction history tracking</li>
-                <li>Notes & follow-up logs</li>
-                <li>Easy data access</li>
-                <li>Personalized communication</li>
-            </ul>
-
-            <div class="crm-result">Stronger relationships & repeat business</div>
-        </div>
-    </div>
-
-</section>
+    <!-- main ends -->
 
 
 
 
-
-     <!-- main ends -->
+    <!-- main ends -->
 
     <!-- footer starts -->
     <footer class="footer-section section-bg-3">
@@ -848,6 +1040,33 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
+    </script>
+    <script>
+        function openTab(event, id) {
+
+            document.querySelectorAll('.erp-tab').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            /* small delay for smoother animation reset */
+            setTimeout(() => {
+                document.getElementById(id).classList.add('active');
+            }, 50);
+
+            document.querySelectorAll('.erp-new-item').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // MOBILE BEHAVIOR
+            if (window.innerWidth < 768) {
+                document.querySelector('.erp-new-sidebar').style.display = "none";
+                document.querySelector('.erp-new-content').style.display = "block";
+            }
+        }
+
+        function goBack() {
+            document.querySelector('.erp-new-sidebar').style.display = "block";
+            document.querySelector('.erp-new-content').style.display = "none";
+        }
     </script>
 </body>
 
